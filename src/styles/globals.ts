@@ -15,10 +15,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 
-    background: ${colors.background};
+    background: ${colors.backgroundLight};
 
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
+
+    overflow-x: hidden;
   }
   #root {
     margin: 0 auto;
@@ -76,7 +78,7 @@ export const Button = styled.button`
 
   cursor: pointer;
 
-  background: ${colors.green};
+  background: ${colors.yellow};
   
 
   color: #fff;
@@ -86,7 +88,7 @@ export const Button = styled.button`
   letter-spacing: 1px;
 
   &:hover {
-    background: ${darken(0.02, colors.green)};
+    background: ${darken(0.02, colors.yellow)};
   }
 `;
 
@@ -96,26 +98,26 @@ export const Input = styled.input`
   appearance: none;
 
   background: #fff;
-  border: 0.5px solid ${colors.strokeGray};
+  border: 0.5px solid ${colors.yellow};
   border-radius: 5px;
   padding: 0.5rem 1rem;
 
   width: 100%;
   height: 36px;
 
-  color: ${colors.gray};
+  color: ${colors.yellow};
   font-size: ${fontSize.paragraph};
 
   &:focus {
     outline: none;
-    border: 0.75px solid ${colors.strokeGray};
+    border: 0.75px solid ${colors.yellow};
   }
 `;
 
 export const Divisor = styled.div`
   width: 100%;
   height: 1px;
-  background: ${colors.strokeGray};
+  background: ${colors.yellow};
 
   @media ${landscapeDevice.mobileL} {
     display: none;

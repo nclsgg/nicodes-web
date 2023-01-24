@@ -1,12 +1,8 @@
 export const colors = {
-  background: '#F0F0F0',
-  green: '#02A79D',
-  purple: '#65328F',
-  strokeGray: '#CED3D9',
-  gray: '#697386',
-  dimGray: '#696969',
-  gradient: 'linear-gradient(to right, #02A79D, #65328F)',
-  reverseGradient: 'linear-gradient(to right, #65328F, #02A79D)',
+  backgroundDark: '#121212',
+  backgroundLight: '#E3E3E3',
+  yellow: '#F6FF94',
+  darkGray: '#121212',
 }
 
 export const screenSize = {
@@ -16,20 +12,20 @@ export const screenSize = {
   tablet: '768px',
   tabletL: '900px',
   laptop: '1200px',
-  laptopL: '1440px',
+  laptopL: '1920px',
   desktop: '2560px'
 }
 
 export const device = {
-  mobileS: `(max-width: ${screenSize.mobileS})`,
-  mobileM: `(max-width: ${screenSize.mobileM})`,
-  mobileL: `(max-width: ${screenSize.mobileL})`,
-  tablet: `(max-width: ${screenSize.tablet})`,
-  tabletL: `(max-width: ${screenSize.tabletL})`,
-  laptop: `(max-width: ${screenSize.laptop})`,
-  laptopL: `(max-width: ${screenSize.laptopL})`,
-  desktop: `(max-width: ${screenSize.desktop})`,
-  desktopL: `(max-width: ${screenSize.desktop})`
+  mobileS: `(min-width: ${screenSize.mobileS})`,
+  mobileM: `(min-width: ${screenSize.mobileM})`,
+  mobileL: `(min-width: ${screenSize.mobileL})`,
+  tablet: `(min-width: ${screenSize.tablet})`,
+  tabletL: `(min-width: ${screenSize.tabletL})`,
+  laptop: `(min-width: ${screenSize.laptop})`,
+  laptopL: `(min-width: ${screenSize.laptopL})`,
+  desktop: `(min-width: ${screenSize.desktop})`,
+  desktopL: `(min-width: ${screenSize.desktop})`
 };
 
 export const landscapeDevice = {
